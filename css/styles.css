@@ -83,3 +83,11 @@ body {
     color: #fff;
     background-color: #c13c0d;
 }
+
+/* admin index.php */
+
+.admin{
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
