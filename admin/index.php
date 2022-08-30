@@ -1,3 +1,16 @@
+<?php
+
+    require("Database.php");
+    $pdo = Database::connect();
+    $statement = $pdo->query("SELECT items.id, items.name, items.description, items.price, categories.name AS category
+    From items 
+    LEFT JOIN categories ON items.category = categories.id
+    ORDER BY items.id DESC");
+
+    $res = $statement->fetchAll(PDO::FETCH_ASSOC);
+    // var_dump($res);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -28,28 +41,19 @@
                     </tr>
                   </thead>
                   <tbody>
+                    <?php foreach($res as $item):?>
                     <tr>
-                      <td>Item 1</td>
-                      <td>Description 1</td>
-                      <td>Prix 1</td>
-                      <td>Catégorie 1</td>
+                      <td><?= $item["name"];?></td>
+                      <td><?= $item["description"];?></td>
+                      <td><?= $item["price"];?></td>
+                      <td><?= $item["category"];?></td>
                       <td width=340>
-                        <a class="btn btn-secondary" href="view.php?id=1"><span class="bi-eye"></span> Voir</a>
-                        <a class="btn btn-primary" href="update.php?id=1"><span class="bi-pencil"></span> Modifier</a>
-                        <a class="btn btn-danger" href="delete.php?id=1"><span class="bi-x"></span> Supprimer</a>
+                        <a class="btn btn-secondary" href="view.php?<?= $item["id"];?>"><span class="bi-eye"></span> Voir</a>
+                        <a class="btn btn-primary" href="update.php?<?= $item["id"];?>"><span class="bi-pencil"></span> Modifier</a>
+                        <a class="btn btn-danger" href="delete.php?<?= $item["id"];?>"><span class="bi-x"></span> Supprimer</a>
                       </td>
                     </tr>
-                    <tr>
-                      <td>Item 2</td>
-                      <td>Description 2</td>
-                      <td>Prix 2</td>
-                      <td>Catégorie 2</td>
-                      <td width=340>
-                        <a class="btn btn-secondary" href="view.php?id=2"><span class="bi-eye"></span> Voir</a>
-                        <a class="btn btn-primary" href="update.php?id=2"><span class="bi-pencil"></span> Modifier</a>
-                        <a class="btn btn-danger" href="delete.php?id=2"><span class="bi-x"></span> Supprimer</a>
-                      </td>
-                    </tr>
+                    <?php endforeach?>
                   </tbody>
                 </table>
             </div>
