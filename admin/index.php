@@ -8,6 +8,8 @@
     ORDER BY items.id DESC");
 
     $res = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    Database::disconnect();
     // var_dump($res);
 ?>
 
@@ -45,12 +47,12 @@
                     <tr>
                       <td><?= $item["name"];?></td>
                       <td><?= $item["description"];?></td>
-                      <td><?= $item["price"];?></td>
+                      <td><?=number_format((float)$item["price"],2,'.',' ') ;?>$</td>
                       <td><?= $item["category"];?></td>
                       <td width=340>
-                        <a class="btn btn-secondary" href="view.php?<?= $item["id"];?>"><span class="bi-eye"></span> Voir</a>
-                        <a class="btn btn-primary" href="update.php?<?= $item["id"];?>"><span class="bi-pencil"></span> Modifier</a>
-                        <a class="btn btn-danger" href="delete.php?<?= $item["id"];?>"><span class="bi-x"></span> Supprimer</a>
+                        <a class="btn btn-secondary" href="view.php?id=<?= $item["id"];?>"><span class="bi-eye"></span> Voir</a>
+                        <a class="btn btn-primary" href="update.php?id=<?= $item["id"];?>"><span class="bi-pencil"></span> Modifier</a>
+                        <a class="btn btn-danger" href="delete.php?id=<?= $item["id"];?>"><span class="bi-x"></span> Supprimer</a>
                       </td>
                     </tr>
                     <?php endforeach?>
