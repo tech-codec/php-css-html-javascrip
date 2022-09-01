@@ -17,3 +17,7 @@ présentation de la page de la page d'ajout:
 
 présentation de la page modification:
 ![modifier](https://user-images.githubusercontent.com/72146213/187902760-6a51e8ce-a205-4fa0-a140-593d303d93bb.PNG)
+
+présentation de la page modification sur mobile
+![surmobile](https://user-images.githubusercontent.com/72146213/187903200-3bb4661c-0f50-4663-a6f2-ba431bedcffb.PNG)
+
