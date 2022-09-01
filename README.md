@@ -10,3 +10,7 @@ présentation de la page d'accueil index.php:
 présentation de la page de la page d'administration:
 
 ![admin](https://user-images.githubusercontent.com/72146213/187901083-e834f87e-7c4e-43a3-8581-e64a779e86df.PNG)
+
+
+présentation de la page de la page d'ajout:
+![ajout](https://user-images.githubusercontent.com/72146213/187901621-8d2342c3-d852-4f33-9bf2-06a69fb6e364.PNG)
