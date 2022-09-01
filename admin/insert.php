@@ -157,7 +157,7 @@
                         <br>
                         <div class="form-action">
                             <a class="btn btn-primary" href="index.php"><span class="bi bi-arrow-left"></span> Retour</a>
-                            <button class="btn btn-success" type="submit"><span class="bi bi-check"></span> Valider</button>
+                            <button class="btn btn-success" type="submit"><span class="bi bi-check"></span> Enregistrer</button>
                         </div>
                     </form>
                 </div>
