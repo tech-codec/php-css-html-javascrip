@@ -15,5 +15,5 @@ présentation de la page de la page d'administration:
 présentation de la page de la page d'ajout:
 ![ajout](https://user-images.githubusercontent.com/72146213/187901621-8d2342c3-d852-4f33-9bf2-06a69fb6e364.PNG)
 
-présentation de la page de la page modification:
+présentation de la page modification:
 ![modifier](https://user-images.githubusercontent.com/72146213/187902760-6a51e8ce-a205-4fa0-a140-593d303d93bb.PNG)
