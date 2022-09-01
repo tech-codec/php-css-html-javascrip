@@ -1,7 +1,7 @@
 # php-css-html-javascrip
 mise en place d'un projet de Burger
 
-c'est juste un projet de test de connaissance sur du sql, du css, du php, du bootstrap
+c'est juste un projet de test de connaissance sur du sql, du css, du php, du bootstrap pour rendre les pages responsive
 
 présentation de la page d'accueil index.php:
 
